@@ -1,5 +1,5 @@
 function showAnswer(response) {
-    
+   console.log(response); 
 }
 
 
@@ -10,4 +10,5 @@ let prompt = "Who the first female president was?"
 let apiUrl =
 `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-axios.get(apiUrl).then(showAnswer)
+console.log("procesing");
+axios.get(apiUrl).then(showAnswer);
